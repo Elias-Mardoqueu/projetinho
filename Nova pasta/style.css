@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -15,20 +19,84 @@
 
 .container .content {
     display: flex;
+    justify-content: center;
     width: 60%;
     height: 70%;
-    border-radius: 10px;
 }
 
 .container .content .box {
     background: #f79585;
-    width: 50%;
+    width: 55%;
     height: 100%;
-    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .content .box .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.container .content .box .formulario input {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.container .content .box .formulario button {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #745e50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+} 
+
+.container .content .box .formulario p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container .content h2 {
+    margin-top: 25px;
+    font-weight: 600;
+    color: #745e50;
 }
 
 .container .content .box2 {
-    background: #8f4338;
-    width: 50%;
+    background: #fdaf8a;
+    width: 45%;
     height: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .content .box2 .funcionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 20%;
+    margin-left: 10px;
+}
+
+.container .content .box2 .funcionario p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
 }
