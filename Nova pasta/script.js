@@ -1,5 +1,5 @@
 let submit = document.getElementById('botao-calcular');
-let add_content = document.getElementById('box2');
+let add_content = document.querySelector('.funcionario');
 
 
 submit.addEventListener('click',()=>{
@@ -10,7 +10,8 @@ submit.addEventListener('click',()=>{
     var total_pay = parseFloat(salary) + (parseFloat(solds) * 15 / 100); 
     console.log(total_pay);
     add_content.innerHTML += `
-        <h1>funcionario : `+name_peploe+`<h1>
-        <h2>sálario : `+total_pay+`</h2>
+        <p>funcionario : `+name_peploe+`<p>
+        <p>sálario : `+total_pay+`</p>
+        <br/>
     `;
 })
